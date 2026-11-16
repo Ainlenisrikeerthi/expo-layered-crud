@@ -8,8 +8,8 @@ It has no fake backend and no mock server.
 > **New to the project?** Start with [docs/GETTING-STARTED.md](docs/GETTING-STARTED.md).
 > It takes you from an empty laptop to a running app, step by step.
 >
-> **New to React Native?** Follow the 30-day [docs/LEARNING-PLAN.md](docs/LEARNING-PLAN.md)
-> ([PDF](docs/LEARNING-PLAN.pdf)).
+> **Learning on your own?** Follow the self-paced plan: each week, learn the concepts first, then
+> do 4 real tasks: [docs/LEARNING-PLAN.md](docs/LEARNING-PLAN.md) ([PDF](docs/LEARNING-PLAN.pdf)).
 
 ---
 
@@ -306,7 +306,7 @@ For details, and for how to re-brand the app, see **[docs/THEMING.md](docs/THEMI
 | [src/modules/catalog/features/product-list/README.md](src/modules/catalog/features/product-list/README.md) | You want the **feature reference** to copy             |
 | [docs/ADDING-A-MODULE.md](docs/ADDING-A-MODULE.md)                                                         | You need a new business area (e.g. users, orders)      |
 | [docs/ADDING-A-FEATURE.md](docs/ADDING-A-FEATURE.md)                                                       | You need a new screen or use case in a module          |
-| [docs/LEARNING-PLAN.md](docs/LEARNING-PLAN.md) ([PDF](docs/LEARNING-PLAN.pdf))                             | You're new to JS/TS/React Native: 30-day plan          |
+| [docs/LEARNING-PLAN.md](docs/LEARNING-PLAN.md) ([PDF](docs/LEARNING-PLAN.pdf))                             | You're learning: 4 weeks, 4 tasks a week, self-paced   |
 | [docs/THEMING.md](docs/THEMING.md)                                                                         | You're styling something or adding UI components       |
 | [docs/LIBRARIES.md](docs/LIBRARIES.md)                                                                     | You wonder why a library is here and how it's used     |
 | [docs/CONVENTIONS.md](docs/CONVENTIONS.md)                                                                 | You're about to open your first pull request           |

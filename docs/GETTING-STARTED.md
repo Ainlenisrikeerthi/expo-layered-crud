@@ -132,7 +132,8 @@ Read these in order:
    **reference feature** [product-list/README.md](../src/modules/catalog/features/product-list/README.md).
 6. [ADDING-A-FEATURE.md](ADDING-A-FEATURE.md) and [ADDING-A-MODULE.md](ADDING-A-MODULE.md) are
    recipes. Try them as exercises!
-7. New to React Native? Follow the day-by-day [LEARNING-PLAN.md](LEARNING-PLAN.md).
+7. Learning on your own? Follow [LEARNING-PLAN.md](LEARNING-PLAN.md): each week, learn the
+   concepts first, then do 4 tasks.
 
 ### A suggested reading path through the code
 
