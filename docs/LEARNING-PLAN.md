@@ -122,15 +122,15 @@ Do this before Day 1 (or during the first hour of Day 1).
 
 **Practice**
 
-1. Open `https://dummyjson.com/products/1` in your browser. Identify 5 fields and their types (text, number, list, object).
-2. Open `https://dummyjson.com/products?limit=3&skip=0`. What do `limit` and `skip` do? Try `skip=3`.
-3. Open `https://dummyjson.com/products/999999`. What status code and message do you get?
+1. Open [`https://dummyjson.com/products/1`](https://dummyjson.com/products/1) in your browser. Identify 5 fields and their types (text, number, list, object).
+2. Open [`https://dummyjson.com/products?limit=3&skip=0`](https://dummyjson.com/products?limit=3&skip=0). What do `limit` and `skip` do? Try `skip=3`.
+3. Open [`https://dummyjson.com/products/999999`](https://dummyjson.com/products/999999). What status code and message do you get?
 4. In the terminal: create a folder `rn-learning`, go into it, create `notes.txt`, list the files, go back up.
 5. Draw (on paper) the journey: "user taps Products tab → app sends GET request → server answers JSON → app shows a list".
 
 **In this repo**
 
-- The base URL of the API lives in `src/shared/config/env.ts` (`https://dummyjson.com`).
+- The base URL of the API lives in `src/shared/config/env.ts` ([`https://dummyjson.com`](https://dummyjson.com)).
 - All the URLs the app calls are listed in `src/modules/catalog/data/catalog.endpoints.ts`. Open it and match each one to a DummyJSON docs section.
 
 **Done when**
@@ -244,7 +244,7 @@ Do this before Day 1 (or during the first hour of Day 1).
 
 **Practice**
 
-1. Fetch `https://dummyjson.com/products?limit=10` in the browser, copy the `products` array into `products.js`.
+1. Fetch [`https://dummyjson.com/products?limit=10`](https://dummyjson.com/products?limit=10) in the browser, copy the `products` array into `products.js`.
 2. Using `map`, make a list of titles.
 3. Using `filter`, keep products cheaper than 20.
 4. Using `find`, get the product with `id === 3`.
@@ -946,7 +946,7 @@ Do this before Day 1 (or during the first hour of Day 1).
 
 **Practice**
 
-1. Read `product.schema.ts` and match each field with real JSON from `https://dummyjson.com/products/1`.
+1. Read `product.schema.ts` and match each field with real JSON from [`https://dummyjson.com/products/1`](https://dummyjson.com/products/1).
 2. **Break it on purpose:** add a required field that DummyJSON does not send (for example `barcodeNumber: z.number()`) and open a product. See the parse error screen. Then make it `.optional()` and see it work.
 3. Add a real field you are not using yet (for example `warrantyInformation` or `shippingInformation`) to the schema and show it on the detail screen.
 4. Write a new service function `listByCategory(category)` using the endpoint you added on Day 20, validated with the list schema.
@@ -1254,7 +1254,7 @@ Do this before Day 1 (or during the first hour of Day 1).
 3. (Optional, needs an Expo account) Run `npx eas-cli@latest build --profile development --platform android` and install the build.
 4. **Capstone part 1 — the "users" module data layer.** Create a branch `feat/users-module` and follow [Adding a module](ADDING-A-MODULE.md):
    - `src/modules/users/data/users.endpoints.ts` — `/users`, `/users/{id}`, `/users/search?q=`.
-   - `user.schema.ts` — zod schemas for a user (id, firstName, lastName, email, phone, image, age, optional company) and the list response (`users`, `total`, `skip`, `limit`). Check real JSON at `https://dummyjson.com/users/1`.
+   - `user.schema.ts` — zod schemas for a user (id, firstName, lastName, email, phone, image, age, optional company) and the list response (`users`, `total`, `skip`, `limit`). Check real JSON at [`https://dummyjson.com/users/1`](https://dummyjson.com/users/1).
    - `users.service.ts` — `list`, `getById`, validated with `parseResponse`.
    - `user.keys.ts` and `user.queries.ts` — key factory, `queryOptions`, `useUserList` (infinite) and `useUser`.
    - `__tests__/` — schema tests and a service test (including a 404).
