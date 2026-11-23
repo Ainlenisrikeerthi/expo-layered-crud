@@ -23,6 +23,7 @@ export const unstable_settings = {
  *   products/[id]/edit   → edit form
  *   products/new         → create form
  *   ui-sandbox           → every UI component on one screen (opened from Settings)
+ *   learn, learn/[id]    → 📘 Week 1 teaching demo (opened from Settings)
  *
  * This "tabs inside a stack" layout is the standard pattern in most production apps.
  */
@@ -45,6 +46,9 @@ export default function RootLayout() {
         <Stack.Screen name="products/[id]/index" options={{ title: 'Product' }} />
         <Stack.Screen name="products/[id]/edit" options={{ title: 'Edit product' }} />
         <Stack.Screen name="ui-sandbox" options={{ title: 'UI Sandbox' }} />
+        {/* 📘 WEEK 1 DEMO (Expo Router): Stack screens pushed on top of the tabs */}
+        <Stack.Screen name="learn/index" options={{ title: 'Week 1 Demo' }} />
+        <Stack.Screen name="learn/[id]" options={{ title: 'Student' }} />
       </Stack>
       {/* Needed by React Native Reusables dialogs: they render "on top of" everything here. */}
       <PortalHost />

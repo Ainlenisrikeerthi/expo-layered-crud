@@ -1,6 +1,7 @@
 import Constants from 'expo-constants';
 import { router } from 'expo-router';
 import {
+  GraduationCap,
   Globe,
   Info,
   Monitor,
@@ -12,6 +13,7 @@ import {
 } from 'lucide-react-native';
 import { Alert, ScrollView, View } from 'react-native';
 
+import { learnRoutes } from '@/modules/learn';
 import { getErrorMessage } from '@/shared/api';
 import { SettingsGroup, SettingsRow } from '@/shared/components/settings-row';
 import { Separator } from '@/shared/ui/separator';
@@ -63,6 +65,14 @@ export function SettingsScreen() {
       </SettingsGroup>
 
       <SettingsGroup title="Developer">
+        {/* 📘 WEEK 1 DEMO: entry point to the teaching screens (route "/learn") */}
+        <SettingsRow
+          icon={GraduationCap}
+          label="Week 1 Demo"
+          description="Core components, TS, Tailwind, Expo Router, Zod"
+          onPress={() => router.push(learnRoutes.students)}
+        />
+        <Separator />
         <SettingsRow
           icon={Palette}
           label="UI Sandbox"
